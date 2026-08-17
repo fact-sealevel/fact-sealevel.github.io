@@ -1,0 +1,1445 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.fact-sealevel.github.io/getting_started/downloading_input_data/">
+      
+      
+        <link rel="prev" href="../installation_instructions/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.53">
+    
+    
+      
+        <title>Module-specific input data - fact-sealevel (FACTS2)</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.20815dad.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#module-specific-input-data" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="fact-sealevel (FACTS2)" class="md-header__button md-logo" aria-label="fact-sealevel (FACTS2)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            fact-sealevel (FACTS2)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Module-specific input data
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun-moon" viewBox="0 0 24 24"><path d="M12 2v2M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715M16 12a4 4 0 0 0-4-4M19 5l-1.256 1.256M20 12h2"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="fact-sealevel (FACTS2)" class="md-nav__button md-logo" aria-label="fact-sealevel (FACTS2)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
+
+    </a>
+    fact-sealevel (FACTS2)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-rocket" viewBox="0 0 24 24"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Welcome to fact-sealevel
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../about_facts/" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-component" viewBox="0 0 24 24"><path d="M15.536 11.293a1 1 0 0 0 0 1.414l2.376 2.377a1 1 0 0 0 1.414 0l2.377-2.377a1 1 0 0 0 0-1.414l-2.377-2.377a1 1 0 0 0-1.414 0zM2.297 11.293a1 1 0 0 0 0 1.414l2.377 2.377a1 1 0 0 0 1.414 0l2.377-2.377a1 1 0 0 0 0-1.414L6.088 8.916a1 1 0 0 0-1.414 0zM8.916 17.912a1 1 0 0 0 0 1.415l2.377 2.376a1 1 0 0 0 1.414 0l2.377-2.376a1 1 0 0 0 0-1.415l-2.377-2.376a1 1 0 0 0-1.414 0zM8.916 4.674a1 1 0 0 0 0 1.414l2.377 2.376a1 1 0 0 0 1.414 0l2.377-2.376a1 1 0 0 0 0-1.414l-2.377-2.377a1 1 0 0 0-1.414 0z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  FACTS Overview
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  FACTS Overview
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../facts_overview/facts_experiment.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  FACTS Experiments
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../facts_overview/facts_module.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  FACTS Modules
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../facts_overview/glossary.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Glossary
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../module_contributor_docs/" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-package-plus" viewBox="0 0 24 24"><path d="M12 22V12M16 17h6M19 14v6M21 10.535V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.729l7 4a2 2 0 0 0 2 .001l1.675-.955"/><path d="M3.29 7 12 12l8.71-5M7.5 4.27l8.997 5.148"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Module Contributor Guide
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Module Contributor Guide
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module_contributor_docs/module_requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Module Requirements
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module_contributor_docs/build_facts_module_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Tutorial: Building a FACTS Module
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module_contributor_docs/submit_module_to_fmr_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Tutorial: Submitting a module to the FACTS Module Registry
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module_contributor_docs/module_template_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Module Template Overview
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-out-up-right" viewBox="0 0 24 24"><path d="M22 12A10 10 0 1 1 12 2M22 2 12 12M16 2h6v6"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+  Getting started with FACTS
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Getting started with FACTS
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation_instructions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Installation
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Downloading module input data
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Downloading module input data
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shared-input-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Shared input data
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-specific-input-data_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Module-specific input data
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Module-specific input data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fair-temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        fair-temperature
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fair2-climate" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        fair2-climate
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fittedismip-gris" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        fittedismip-gris
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bamber19-icesheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        bamber19-icesheets
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deconto21-ais" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        deconto21-ais
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipccar5-glaciers" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ipccar5-glaciers
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipccar5-icesheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ipccar5-icesheets
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#larmip-ais" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        larmip-ais
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssp-landwaterstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ssp-landwaterstorage
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tlm-sterodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        tlm-sterodynamics
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ebm3-thermalexpansion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ebm3-thermalexpansion
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kopp14-verticallandmotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        kopp14-verticallandmotion
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oelsmann24-verticallandmotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        oelsmann24-verticallandmotion
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nzinsargps-verticallandmotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        nzinsargps-verticallandmotion
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shared-input-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Shared input data
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-specific-input-data_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Module-specific input data
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Module-specific input data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fair-temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        fair-temperature
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fair2-climate" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        fair2-climate
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fittedismip-gris" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        fittedismip-gris
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bamber19-icesheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        bamber19-icesheets
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deconto21-ais" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        deconto21-ais
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipccar5-glaciers" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ipccar5-glaciers
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipccar5-icesheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ipccar5-icesheets
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#larmip-ais" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        larmip-ais
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssp-landwaterstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ssp-landwaterstorage
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tlm-sterodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        tlm-sterodynamics
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ebm3-thermalexpansion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ebm3-thermalexpansion
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kopp14-verticallandmotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        kopp14-verticallandmotion
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oelsmann24-verticallandmotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        oelsmann24-verticallandmotion
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nzinsargps-verticallandmotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        nzinsargps-verticallandmotion
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to fact-sealevel
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Getting started with FACTS
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="module-specific-input-data">Module-specific input data<a class="headerlink" href="#module-specific-input-data" title="Permanent link">&para;</a></h1>
+<p>This page holds bash scripts to download input data for individual modules in the FACTS2 ecosystem.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you have not yet setup your FACTS workspace, we <em>highly</em> recommend reading the FEB <a href="https://github.com/fact-sealevel/facts-experiment-builder/blob/main/docs/SETUP.md">documentation</a> on this step before proceeding.</p>
+</div>
+<p>Run these commands from your <strong>FACTS workspace root</strong> (the directory where you ran <code>feb init</code>). Data will be stored under a <code>data/</code> subdirectory within the workspace. Pass these paths to <code>feb setup-experiment</code> via <code>--module-specific-input-data data/module_specific_input_data</code> and <code>--shared-input-data data/shared_input_data</code>.</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/shared_input_data
+</span></code></pre></div>
+<h2 id="shared-input-data">Shared input data<a class="headerlink" href="#shared-input-data" title="Permanent link">&para;</a></h2>
+<p>GRD fingerprint data:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/grd_fingerprints_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/shared_input_data/grd_fingerprints_data.tgz
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/shared_input_data/grd_fingerprints_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/shared_input_data
+</span></code></pre></div></p>
+<p>Location file (example with New York):
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;New_York  12  40.70   -74.01&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>data/shared_input_data/location.lst
+</span></code></pre></div></p>
+<h2 id="module-specific-input-data_1">Module-specific input data<a class="headerlink" href="#module-specific-input-data_1" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The examples shared below are a temporary solution. In the near future, we plan to update the instructions and guidelines around downloading module input data. If you are trying to download input data for a module that you don't see listed here, please check the <a href="https://github.com/fact-sealevel/facts-module-registry">FACTS-module-registry</a>; you should find module-specific instructions in each entry as well. </p>
+</div>
+<h3 id="fair-temperature">fair-temperature<a class="headerlink" href="#fair-temperature" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data/fair-temperature
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/fair_temperature_fit_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/fair-temperature/fair_temperature_fit_data.tgz
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/fair-temperature/fair_temperature_fit_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/fair-temperature
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/fair_temperature_preprocess_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/fair-temperature/fair_temperature_preprocess_data.tgz
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/fair-temperature/fair_temperature_preprocess_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/fair-temperature
+</span></code></pre></div>
+<h3 id="fair2-climate">fair2-climate<a class="headerlink" href="#fair2-climate" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data/fair2-climate
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/records/18190680/files/fair2_climate_project_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/fair2-climate/fair2_climate_project_data.tgz
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/fair2-climate/fair2_climate_project_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/fair2-climate
+</span></code></pre></div>
+<h3 id="fittedismip-gris">fittedismip-gris<a class="headerlink" href="#fittedismip-gris" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data/fittedismip-gris
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/FittedISMIP_icesheet_fit_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/fittedismip-gris/FittedISMIP_icesheet_fit_data.tgz
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/fittedismip-gris/FittedISMIP_icesheet_fit_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/fittedismip-gris
+</span></code></pre></div>
+<h3 id="bamber19-icesheets">bamber19-icesheets<a class="headerlink" href="#bamber19-icesheets" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data/bamber19-icesheets
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/bamber19_icesheets_preprocess_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/bamber19-icesheets/bamber19_icesheets_preprocess_data.tgz
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/bamber19-icesheets/bamber19_icesheets_preprocess_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/bamber19-icesheets
+</span></code></pre></div>
+<h3 id="deconto21-ais">deconto21-ais<a class="headerlink" href="#deconto21-ais" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data/deconto21-ais
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/deconto21_AIS_preprocess_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/deconto21-ais/deconto21_AIS_preprocess_data.tgz
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/deconto21-ais/deconto21_AIS_preprocess_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/deconto21-ais
+</span></code></pre></div>
+<h3 id="ipccar5-glaciers">ipccar5-glaciers<a class="headerlink" href="#ipccar5-glaciers" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data/ipccar5
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/ipccar5_glaciers_project_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/ipccar5/ipccar5_glaciers_project_data.tgz
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/ipccar5/ipccar5_glaciers_project_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/ipccar5
+</span></code></pre></div>
+<h3 id="ipccar5-icesheets">ipccar5-icesheets<a class="headerlink" href="#ipccar5-icesheets" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data/ipccar5
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/ipccar5_icesheets_project_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/ipccar5/ipccar5_icesheets_project_data.tgz
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/ipccar5/ipccar5_icesheets_project_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/ipccar5
+</span></code></pre></div>
+<h3 id="larmip-ais">larmip-ais<a class="headerlink" href="#larmip-ais" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data/larmip-ais
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/larmip_icesheet_fit_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/larmip-ais/larmip_icesheet_fit_data.tgz
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/larmip-ais/larmip_icesheet_fit_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/larmip-ais
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/larmip_icesheet_project_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/larmip-ais/larmip_icesheet_project_data.tgz
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/larmip-ais/larmip_icesheet_project_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/larmip-ais
+</span></code></pre></div>
+<h3 id="ssp-landwaterstorage">ssp-landwaterstorage<a class="headerlink" href="#ssp-landwaterstorage" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data/ssp-landwaterstorage
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/ssp_landwaterstorage_preprocess_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/ssp-landwaterstorage/ssp_landwaterstorage_preprocess_data.tgz
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/ssp-landwaterstorage/ssp_landwaterstorage_preprocess_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/ssp-landwaterstorage
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>curl<span class="w"> </span>-sL<span class="w"> </span>https://zenodo.org/record/7478192/files/ssp_landwaterstorage_postprocess_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/ssp-landwaterstorage/ssp_landwaterstorage_postprocess_data.tgz
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/ssp-landwaterstorage/ssp_landwaterstorage_postprocess_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/ssp-landwaterstorage
+</span></code></pre></div>
+<h3 id="tlm-sterodynamics">tlm-sterodynamics<a class="headerlink" href="#tlm-sterodynamics" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data/tlm-sterodynamics
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/tlm_sterodynamics_preprocess_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/tlm-sterodynamics/tlm_sterodynamics_preprocess_data.tgz
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/tlm-sterodynamics/tlm_sterodynamics_preprocess_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/tlm-sterodynamics
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/tlm_sterodynamics_cmip6_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/tlm-sterodynamics/tlm_sterodynamics_cmip6_data.tgz
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/tlm-sterodynamics/tlm_sterodynamics_cmip6_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/tlm-sterodynamics
+</span></code></pre></div>
+<h3 id="ebm3-thermalexpansion">ebm3-thermalexpansion<a class="headerlink" href="#ebm3-thermalexpansion" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data/ebm3-thermalexpansion
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/records/11506798/files/ebm3_thermal_expansion_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/ebm3-thermalexpansion/ebm3_thermal_expansion_data.tgz
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/ebm3-thermalexpansion/ebm3_thermal_expansion_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/ebm3-thermalexpansion
+</span></code></pre></div>
+<h3 id="kopp14-verticallandmotion">kopp14-verticallandmotion<a class="headerlink" href="#kopp14-verticallandmotion" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data/kopp14-verticallandmotion
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/kopp14_verticallandmotion_preprocess_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/kopp14-verticallandmotion/kopp14_verticallandmotion_preprocess_data.tgz
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/kopp14-verticallandmotion/kopp14_verticallandmotion_preprocess_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/kopp14-verticallandmotion
+</span></code></pre></div>
+<h3 id="oelsmann24-verticallandmotion">oelsmann24-verticallandmotion<a class="headerlink" href="#oelsmann24-verticallandmotion" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data/oelsmann24-verticallandmotion
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/records/18199757/files/oelsmann24_vlm_data.tar.gz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/oelsmann24-verticallandmotion/oelsmann24_vlm_data.tar.gz
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/oelsmann24-verticallandmotion/oelsmann24_vlm_data.tar.gz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/oelsmann24-verticallandmotion
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>mv<span class="w"> </span>data/module_specific_input_data/oelsmann24-verticallandmotion/data/*<span class="w"> </span>data/module_specific_input_data/oelsmann24-verticallandmotion/<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>rmdir<span class="w"> </span>data/module_specific_input_data/oelsmann24-verticallandmotion/data
+</span></code></pre></div>
+<h3 id="nzinsargps-verticallandmotion">nzinsargps-verticallandmotion<a class="headerlink" href="#nzinsargps-verticallandmotion" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/module_specific_input_data/nzinsargps-verticallandmotion
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>curl<span class="w"> </span>-L<span class="w"> </span>https://zenodo.org/record/7478192/files/NZInsarGPS_verticallandmotion_preprocess_data.tgz<span class="w"> </span>-o<span class="w"> </span>data/module_specific_input_data/nzinsargps-verticallandmotion/NZInsarGPS_verticallandmotion_preprocess_data.tgz
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>data/module_specific_input_data/nzinsargps-verticallandmotion/NZInsarGPS_verticallandmotion_preprocess_data.tgz<span class="w"> </span>-C<span class="w"> </span>data/module_specific_input_data/nzinsargps-verticallandmotion
+</span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../installation_instructions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Installation
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","header.autohide","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.top","navigation.tracking","search.highlight"],"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.69c251d7.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
