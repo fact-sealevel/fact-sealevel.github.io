@@ -43,14 +43,6 @@ Typically, researchers link these modules together in specific ways to estimate 
 
     [:octicons-arrow-right-24: Module Contributor Guide](module_contributor_docs/index.md)
 
--   :lucide-circle-arrow-out-up-right:{ .lg .middle } __Getting started as a FACTS user__
-
-    ---
-
-    Want to use FACTS to configure and run sea-level experiments? Check out our getting started guide.
-
-    [:octicons-arrow-right-24: Getting Started](getting_started/index.md)
-
 -   :lucide-component:{ .lg .middle } __`fact-sealevel` Overview__
 
     ---
@@ -58,6 +50,15 @@ Typically, researchers link these modules together in specific ways to estimate 
     All components of FACTS2 are located in the fact-sealevel GitHub organization. Learn about the different components of the FACTS2 ecosystem here.
 
     [:octicons-arrow-right-24: fact-sealevel overview](fact_sealevel_overview/index.md)
+    ---
+    
+-   :lucide-circle-arrow-out-up-right:{ .lg .middle } __Getting started as a FACTS user__
+
+    ---
+
+    Want to use FACTS to configure and run sea-level experiments? Check out our getting started guide.
+
+    [:octicons-arrow-right-24: Getting Started](getting_started/index.md)
 
 ---
 

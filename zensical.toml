@@ -12,11 +12,11 @@ site_name = "fact-sealevel (FACTS2)"
 
 nav = [
   { "Welcome to fact-sealevel" = "index.md" },
-  { "FACTS Overview"= [
+  { "About FACTS"= [
       "about_facts/index.md",
-          {"FACTS Experiments" = "facts_overview/facts_experiment.md"},
-          {"FACTS Modules" = "facts_overview/facts_module.md"},
-          {"Glossary" = "facts_overview/glossary.md"},
+          {"FACTS Experiments" = "about_facts/facts_experiment.md"},
+          {"FACTS Modules" = "about_facts/facts_module.md"},
+          {"Glossary" = "about_facts/glossary.md"},
         ]
     },
   { "Module Contributor Guide" = [
@@ -34,6 +34,11 @@ nav = [
         {"Downloading module input data" = "getting_started/downloading_input_data.md"},
   ]
   },
+  {"FACT-Sealevel Overview"=[
+    "fact_sealevel_overview/index.md",
+    {"FACTS-module-registry"="fact_sealevel_overview/fmr/index.md"},
+    {"FACTS-experiment-builder"="fact_sealevel_overview/feb/index.md"}
+  ]}
 ]
 
 # extra_css = ["stylesheets/extra.css"]

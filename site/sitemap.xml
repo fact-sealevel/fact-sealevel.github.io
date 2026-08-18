@@ -7,6 +7,15 @@
         <loc>https://www.fact-sealevel.github.io/about_facts/</loc>
       </url>
       <url>
+        <loc>https://www.fact-sealevel.github.io/about_facts/facts_experiment/</loc>
+      </url>
+      <url>
+        <loc>https://www.fact-sealevel.github.io/about_facts/facts_module/</loc>
+      </url>
+      <url>
+        <loc>https://www.fact-sealevel.github.io/about_facts/glossary/</loc>
+      </url>
+      <url>
         <loc>https://www.fact-sealevel.github.io/module_contributor_docs/</loc>
       </url>
       <url>
@@ -29,5 +38,14 @@
       </url>
       <url>
         <loc>https://www.fact-sealevel.github.io/getting_started/downloading_input_data/</loc>
+      </url>
+      <url>
+        <loc>https://www.fact-sealevel.github.io/fact_sealevel_overview/</loc>
+      </url>
+      <url>
+        <loc>https://www.fact-sealevel.github.io/fact_sealevel_overview/fmr/</loc>
+      </url>
+      <url>
+        <loc>https://www.fact-sealevel.github.io/fact_sealevel_overview/feb/</loc>
       </url>
 </urlset>
