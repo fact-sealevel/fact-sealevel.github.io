@@ -1,21 +1,25 @@
-# Module-specific input data
+# Module input data
 
-This page holds bash scripts to download input data for individual modules in the FACTS2 ecosystem.
+This page has copy & paste commands to download input data for modules in the FACTS2 ecosystem. It is step 4 of [Getting started](index.md#4-download-input-data).
 
-!!! Important
-
-    If you have not yet setup your FACTS workspace, we *highly* recommend reading the FEB [documentation](https://github.com/fact-sealevel/facts-experiment-builder/blob/main/docs/SETUP.md) on this step before proceeding.
-
-Run these commands from your **FACTS workspace root** (the directory where you ran `feb init`). Data will be stored under a `data/` subdirectory within the workspace. Pass these paths to `feb setup-experiment` via `--module-specific-input-data data/module_specific_input_data` and `--shared-input-data data/shared_input_data`.
+Run these commands from your **FACTS workspace root** (the directory where you ran `feb init`). Data is stored under a `data/` subdirectory of the workspace:
 
 ```shell
 mkdir -p data/module_specific_input_data
 mkdir -p data/shared_input_data
 ```
 
+Download sizes listed below are for the compressed archives (`.tgz` files) you download. Extracted data takes up additional space, and the scripts keep the downloaded archives.
+
+When you're done, confirm that every file is in place (see [step 5](index.md#5-check-your-input-data)):
+
+```shell
+uvx --from git+https://github.com/fact-sealevel/facts-experiment-builder@main feb check-data --data-dir data
+```
+
 ## Shared input data
 
-GRD fingerprint data:
+GRD fingerprint data (download size: 24 MB):
 ```bash
 curl -L https://zenodo.org/record/7478192/files/grd_fingerprints_data.tgz -o data/shared_input_data/grd_fingerprints_data.tgz
 tar -xzf data/shared_input_data/grd_fingerprints_data.tgz -C data/shared_input_data
@@ -33,6 +37,8 @@ echo "New_York	12	40.70	-74.01" > data/shared_input_data/location.lst
     
 ### fair-temperature
 
+Download size: 31 MB (two downloads: 6.8 MB + 24.2 MB)
+
 ```bash
 mkdir -p data/module_specific_input_data/fair-temperature
 curl -L https://zenodo.org/record/7478192/files/fair_temperature_fit_data.tgz -o data/module_specific_input_data/fair-temperature/fair_temperature_fit_data.tgz
@@ -43,6 +49,8 @@ tar -xzf data/module_specific_input_data/fair-temperature/fair_temperature_prepr
 
 ### fair2-climate
 
+Download size: 32.8 MB
+
 ```bash
 mkdir -p data/module_specific_input_data/fair2-climate
 curl -L https://zenodo.org/records/18190680/files/fair2_climate_project_data.tgz -o data/module_specific_input_data/fair2-climate/fair2_climate_project_data.tgz
@@ -50,6 +58,8 @@ tar -xzf data/module_specific_input_data/fair2-climate/fair2_climate_project_dat
 ```
 
 ### fittedismip-gris
+
+Download size: 6 KB
 
 ```bash
 mkdir -p data/module_specific_input_data/fittedismip-gris
@@ -59,6 +69,8 @@ tar -xzf data/module_specific_input_data/fittedismip-gris/FittedISMIP_icesheet_f
 
 ### bamber19-icesheets
 
+Download size: 236 MB
+
 ```bash
 mkdir -p data/module_specific_input_data/bamber19-icesheets
 curl -L https://zenodo.org/record/7478192/files/bamber19_icesheets_preprocess_data.tgz -o data/module_specific_input_data/bamber19-icesheets/bamber19_icesheets_preprocess_data.tgz
@@ -66,6 +78,8 @@ tar -xzf data/module_specific_input_data/bamber19-icesheets/bamber19_icesheets_p
 ```
 
 ### deconto21-ais
+
+Download size: 765 KB
 
 ```bash
 mkdir -p data/module_specific_input_data/deconto21-ais
@@ -75,6 +89,8 @@ tar -xzf data/module_specific_input_data/deconto21-ais/deconto21_AIS_preprocess_
 
 ### ipccar5-glaciers
 
+Download size: 23 KB
+
 ```bash
 mkdir -p data/module_specific_input_data/ipccar5
 curl -L https://zenodo.org/record/7478192/files/ipccar5_glaciers_project_data.tgz -o data/module_specific_input_data/ipccar5/ipccar5_glaciers_project_data.tgz
@@ -83,6 +99,8 @@ tar -xzf data/module_specific_input_data/ipccar5/ipccar5_glaciers_project_data.t
 
 ### ipccar5-icesheets
 
+Download size: 4 KB
+
 ```bash
 mkdir -p data/module_specific_input_data/ipccar5
 curl -L https://zenodo.org/record/7478192/files/ipccar5_icesheets_project_data.tgz -o data/module_specific_input_data/ipccar5/ipccar5_icesheets_project_data.tgz
@@ -90,6 +108,8 @@ tar -xzf data/module_specific_input_data/ipccar5/ipccar5_icesheets_project_data.
 ```
 
 ### larmip-ais
+
+Download size: 131 KB (two downloads)
 
 ```bash
 mkdir -p data/module_specific_input_data/larmip-ais
@@ -100,6 +120,8 @@ tar -xzf data/module_specific_input_data/larmip-ais/larmip_icesheet_project_data
 ```
 
 ### ssp-landwaterstorage
+
+Download size: 224 KB (two downloads)
 
 ```bash
 mkdir -p data/module_specific_input_data/ssp-landwaterstorage
@@ -112,6 +134,11 @@ tar -xzf data/module_specific_input_data/ssp-landwaterstorage/ssp_landwaterstora
 
 ### tlm-sterodynamics
 
+Download size: **31.1 GB** (two downloads: 2 KB + 31.1 GB)
+
+!!! Warning
+    The CMIP6 data for this module is very large (31.1 GB compressed). Make sure you have enough disk space (the extracted data needs additional space on top of the download) and a reliable connection before starting.
+
 ```bash
 mkdir -p data/module_specific_input_data/tlm-sterodynamics
 curl -L https://zenodo.org/record/7478192/files/tlm_sterodynamics_preprocess_data.tgz -o data/module_specific_input_data/tlm-sterodynamics/tlm_sterodynamics_preprocess_data.tgz
@@ -121,15 +148,25 @@ curl -L https://zenodo.org/record/7478192/files/tlm_sterodynamics_cmip6_data.tgz
 tar -xzf data/module_specific_input_data/tlm-sterodynamics/tlm_sterodynamics_cmip6_data.tgz -C data/module_specific_input_data/tlm-sterodynamics
 ```
 
-### ebm3-thermalexpansion
+### ebm3-sterodynamics
+
+Download size: **31.3 GB** (two downloads: 1.9 MB + 31.3 GB)
+
+!!! Warning
+    The CMIP6 data for this module is very large (31.3 GB compressed). Make sure you have enough disk space (the extracted data needs additional space on top of the download) and a reliable connection before starting.
 
 ```bash
-mkdir -p data/module_specific_input_data/ebm3-thermalexpansion
-curl -L https://zenodo.org/records/11506798/files/ebm3_thermal_expansion_data.tgz -o data/module_specific_input_data/ebm3-thermalexpansion/ebm3_thermal_expansion_data.tgz
-tar -xzf data/module_specific_input_data/ebm3-thermalexpansion/ebm3_thermal_expansion_data.tgz -C data/module_specific_input_data/ebm3-thermalexpansion
+mkdir -p data/module_specific_input_data/ebm3-sterodynamics/ebm3_project_data
+curl -L https://zenodo.org/records/16024082/files/ebm3_project_data.tgz -o data/module_specific_input_data/ebm3-sterodynamics/ebm3_project_data.tgz
+tar -xzf data/module_specific_input_data/ebm3-sterodynamics/ebm3_project_data.tgz -C data/module_specific_input_data/ebm3-sterodynamics/ebm3_project_data
+
+curl -L https://zenodo.org/records/16024082/files/tlm_sterodynamics_cmip6_ebm3_data.tgz -o data/module_specific_input_data/ebm3-sterodynamics/tlm_sterodynamics_cmip6_ebm3_data.tgz
+tar -xzf data/module_specific_input_data/ebm3-sterodynamics/tlm_sterodynamics_cmip6_ebm3_data.tgz -C data/module_specific_input_data/ebm3-sterodynamics
 ```
 
 ### kopp14-verticallandmotion
+
+Download size: 653 KB
 
 ```bash
 mkdir -p data/module_specific_input_data/kopp14-verticallandmotion
@@ -139,6 +176,8 @@ tar -xzf data/module_specific_input_data/kopp14-verticallandmotion/kopp14_vertic
 
 ### oelsmann24-verticallandmotion
 
+Download size: 1.3 GB
+
 ```bash
 mkdir -p data/module_specific_input_data/oelsmann24-verticallandmotion
 curl -L https://zenodo.org/records/18199757/files/oelsmann24_vlm_data.tar.gz -o data/module_specific_input_data/oelsmann24-verticallandmotion/oelsmann24_vlm_data.tar.gz
@@ -147,6 +186,8 @@ mv data/module_specific_input_data/oelsmann24-verticallandmotion/data/* data/mod
 ```
 
 ### nzinsargps-verticallandmotion
+
+Download size: 144 KB
 
 ```bash
 mkdir -p data/module_specific_input_data/nzinsargps-verticallandmotion

@@ -27,6 +27,14 @@ Typically, researchers link these modules together in specific ways to estimate 
 
 <div class="grid cards" markdown>
 
+-   :lucide-circle-arrow-out-up-right:{ .lg .middle } __Getting started as a FACTS user__
+
+    ---
+
+    Want to use FACTS to configure and run sea-level experiments? Check out our getting started guide.
+
+    [:octicons-arrow-right-24: Getting Started](getting_started/index.md)
+
 -   :lucide-book-open:{ .lg .middle } __About FACTS__
 
     ---
@@ -51,14 +59,6 @@ Typically, researchers link these modules together in specific ways to estimate 
 
     [:octicons-arrow-right-24: fact-sealevel overview](fact_sealevel_overview/index.md)
     ---
-    
--   :lucide-circle-arrow-out-up-right:{ .lg .middle } __Getting started as a FACTS user__
-
-    ---
-
-    Want to use FACTS to configure and run sea-level experiments? Check out our getting started guide.
-
-    [:octicons-arrow-right-24: Getting Started](getting_started/index.md)
 
 ---
 
@@ -68,7 +68,7 @@ Typically, researchers link these modules together in specific ways to estimate 
 The FACTS community is made up of scientists, practitioners, and developers all working on different parts of the FACTS ecosystem. 
 
 ### FACTS Slack Workspace
-If you haven't yet, consider joining our Slack workspace! 
+If you haven't yet, consider joining our Slack workspace! [Email us](mailto:emarshall@impactlab.org) to join.
 
 ### GitHub
 FACTS is entirely open-source. All code that is a part of the FACTS2 ecosystem is located within the FACT-Sealevel GitHub organization. If you run into any issues with a specific module, please raise an issue in that module's repository. Similarly, you can always raise an issue or start a discussion in the [FACTS-experiment-builder](https://github.com/fact-sealevel/facts-experiment-builder), [FACTS-module-registry](https://github.com/fact-sealevel/facts-module-registry) or [FACTS-experiment-catalog](https://github.com/fact-sealevel/facts-experiment-catalog) repositories. 
