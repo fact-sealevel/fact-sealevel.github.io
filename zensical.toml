@@ -19,19 +19,19 @@ nav = [
           {"Glossary" = "about_facts/glossary.md"},
         ]
     },
+  {"Getting started with FACTS"=[
+      "getting_started/index.md",
+        {"Installation" = "getting_started/installation_instructions.md"},
+        {"Module input data" = "getting_started/downloading_input_data.md"},
+        {"Running on HPC" = "getting_started/running_on_hpc.md"},
+  ]
+  },
   { "Module Contributor Guide" = [
       "module_contributor_docs/index.md",
           {"Module Requirements" = "module_contributor_docs/module_requirements.md"},
           {"Tutorial: Building a FACTS Module" = "module_contributor_docs/build_facts_module_tutorial.md"},
           {"Tutorial: Submitting a module to the FACTS Module Registry" = "module_contributor_docs/submit_module_to_fmr_tutorial.md"},
           {"Module Template Overview" = "module_contributor_docs/module_template_overview.md"},
-  ]
-  },
-  
-  {"Getting started with FACTS"=[
-      "getting_started/index.md",
-        {"Installation" = "getting_started/installation_instructions.md"},
-        {"Downloading module input data" = "getting_started/downloading_input_data.md"},
   ]
   },
   {"FACT-Sealevel Overview"=[
