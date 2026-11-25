@@ -28,9 +28,9 @@ This page walks you through everything you need to go from a fresh machine to a 
 FACTS2 is designed to be a flexible framework that can be used across multiple system architectures and run environments. This choice determines which software you need to install in the next step.
 
 - **Your own machine, with Docker (recommended for getting started).** FEB generates a [Docker Compose](https://docs.docker.com/compose/) file that runs your whole experiment with a single command. This works on macOS, Windows, and Linux.
-- **A high-performance computing (HPC) cluster, with Apptainer.** Some modules have large input data and heavy computational requirements, so you may prefer to run FACTS on a cluster. Most HPC systems do not allow Docker but do support [Apptainer](https://apptainer.org/). A FEB command to generate a script that runs a FACTS experiment using Apptainer is in progress and can be viewed [here](https://github.com/fact-sealevel/facts-experiment-builder/tree/add_apptainer_command). See [Running on HPC](running_on_hpc.md) for the current options.
+- **A high-performance computing (HPC) cluster, with Apptainer.** Some modules have large input data and heavy computational requirements, so you may prefer to run FACTS on a cluster. Most HPC systems do not allow Docker but do support [Apptainer](https://apptainer.org/). FEB can generate a Bash script that runs your experiment with Apptainer; see [Running on HPC](running_on_hpc.md).
 
-The rest of this page follows the Docker path.
+The rest of this page follows the Docker path. If you are using Apptainer, follow steps 1–6 as written, then see [Running on HPC](running_on_hpc.md) in place of step 7.
 
 ---
 
@@ -166,23 +166,24 @@ An experiment is defined by an **experiment configuration file**, `experiment-co
 Create one with `feb setup-experiment`. For example, this creates an experiment called `my_first_experiment` that runs FaIR for the climate step and three sea-level modules under SSP1-2.6. All of these modules have small input data (about 56 MB in total, including the shared data):
 
 !!! Note
-    For `--module-specific-iput-data` and `--shared-input-data` paths below, be sure to replace the stand-in text with the paths to each directory on your machine.
-
+    The `--module-specific-input-data` and `--shared-input-data` paths below assume you stored your input data in the workspace's `data/` directory, as in step 4. If you stored it somewhere else, replace these with the absolute paths to each directory on your machine.
 
 ```shell
 uvx --from git+https://github.com/fact-sealevel/facts-experiment-builder@main feb setup-experiment \
   --experiment-name experiments/my_first_experiment \
   --climate-step fair-temperature \
   --sealevel-step fittedismip-gris,ssp-landwaterstorage,kopp14-verticallandmotion \
-  --extremesealevel-step extremesealevel-pointsoverthreshold \
   --pipeline-id aaa --scenario ssp126 --baseyear 2005 \
   --pyear-start 2020 --pyear-end 2150 --pyear-step 10 \
   --nsamps 1000 --location-file location.lst \
-  --module-specific-input-data "path/to/module_specific_input_data" \
-  --shared-input-data "path/to/shared_input_data" 
+  --module-specific-input-data "$(pwd)/data/module_specific_input_data" \
+  --shared-input-data "$(pwd)/data/shared_input_data"
 ```
 
 A few things to note:
+
+- **The input data paths must be absolute.** `"$(pwd)/data/..."` expands to the absolute path of the `data/` directory you created in step 4.
+- **`--location-file` is a file name, not a path.** FEB looks for it in the shared input data directory, which is where step 4 put `location.lst`.
 
 - **Include a parent directory in the experiment name** (here, `experiments/`). This isn't required, but it keeps your workspace organized. If you use a parent directory other than `experiments/`, create it first.
 - **Only `--experiment-name` and a climate step are required.** Any fields you don't pass at the command line must be filled in by hand in `experiment-config.yaml` afterwards. Run `uvx --from git+https://github.com/fact-sealevel/facts-experiment-builder@main feb setup-experiment --help` to see every option.
@@ -193,6 +194,9 @@ A few things to note:
 ---
 
 ## 7. Generate and run the experiment
+
+!!! Note
+    This step uses Docker. If you are running with Apptainer, see [Running on HPC](running_on_hpc.md) instead.
 
 Generate a Docker Compose file from your experiment configuration:
 
@@ -208,7 +212,7 @@ Inspect the file, then run the experiment:
 docker compose -f experiments/my_first_experiment/experiment-compose.yaml up
 ```
 
-**✓ Checkpoint:** when the run finishes, the outputs are in `experiments/my_first_experiment/`.
+**✓ Checkpoint:** when the run finishes, the outputs are in `experiments/my_first_experiment/output-compose/`, with one subdirectory per module.
 
 Congratulations, you have run your first FACTS2 experiment! 🎉
 
