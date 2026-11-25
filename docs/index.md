@@ -4,7 +4,7 @@ icon: lucide/rocket
 
 # Welcome! :wave:
 
-Welcome to FACT-Sealevel! This is the home page for the Framework for Assessing Changes to Sea-level 2 (FACTS2) project. On this site, you will find an overview of FACTS, including links to different components of the FACTS ecosystem as well as tutorials and documentation for both contributors and users. 
+Welcome to the FACT-Sealevel documentation site! This is the home page for the Framework for Assessing Changes to Sea-level 2 (FACTS2) project. On this site, you will find an overview of FACTS, including links to different components of the FACTS ecosystem as well as tutorials and documentation for both contributors and users. All code associated with FACTS is in the [fact-sealevel](https://github.com/fact-sealevel) GitHub organization. 
 
 !!! warning 
 
