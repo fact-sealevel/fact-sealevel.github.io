@@ -4,7 +4,7 @@ icon: lucide/component
 
 # FACTS Overview
 
-The Framework for Assessing Changes to Sea-level (FACTS) is a set of open-source software components that provide a framework for generating and examining projections of sea-level change. FACTS2 is a re-development of the initial FACTS framework. In this section, you will find a conceptual introduction to the FACTS projects and the different pieces of the FACTS2 software stack. 
+The Framework for Assessing Changes to Sea-level (FACTS) is a set of open-source software components that provide a framework for generating and examining projections of sea-level change. FACTS2 is a re-development of the initial FACTS framework presented in [Kopp et al., 2023](https://gmd.copernicus.org/articles/16/7461/2023/). In this section, you will find a conceptual introduction to the FACTS projects and the different pieces of the FACTS2 software stack. 
 
 ---
 
